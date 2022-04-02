@@ -11,7 +11,7 @@ const port = 4567;
 const hostname = 'localhost';
 app.use(bodyParser.json());
 const corsOpts = {
-    origin: '*',
+    origin: '*/',
   
     methods: [
       'GET',
@@ -20,6 +20,7 @@ const corsOpts = {
   
     allowedHeaders: [
       'Content-Type',
+      'Access-Control-Allow-Origin'
     ],
   };
   
